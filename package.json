@@ -1,0 +1,32 @@
+{
+  "name": "calendar-with-next-js",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next",
+    "lint": "standard",
+    "build": "next build",
+    "start": "next start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "next": "^9.0.5",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.4.0",
+    "eslint-plugin-react": "^7.14.3",
+    "standard": "^14.3.0"
+  },
+  "eslintConfig": {
+    "parser": "babel-eslint",
+    "extends": [
+      "./node_modules/standard/eslintrc.json"
+    ]
+  }
+}
