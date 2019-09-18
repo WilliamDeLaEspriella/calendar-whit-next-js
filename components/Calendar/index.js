@@ -1,6 +1,6 @@
 import {Styles} from "./styles";
 
-export default ({ time }) => {
+export const Calendar = ({ time }) => {
     const TimeLastDay = new Date(time.getFullYear(), time.getMonth() + 1, 0);
     var TimeFirstDay = new Date(time.getFullYear(), time.getMonth(), 1); 
  return(

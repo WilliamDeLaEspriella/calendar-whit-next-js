@@ -7,11 +7,12 @@ export const Styles= ({dayWeek}) =>(
             display: grid;
             grid-template-columns: repeat(7, 1fr);
             border: 1px solid #dfdfdf;
-	        grid-gap: 1px;
+            grid-gap: 1px;
+            justify-content: center;
+            align-content: center;
         }
         .day-of-week {
-            top: 338px;
-            left: 369px;
+            height: 40px;
             border: 4px solid #ffff;
             background: #F4F4F4 0% 0% no-repeat padding-box;
             // border: 1px solid #EAF0F4;
@@ -41,22 +42,23 @@ export const Styles= ({dayWeek}) =>(
         }
         .content-week {
             display: inline-block;
-            top: 346px;
-            left: 1233px;
-            width: 52px;
-            height: 13px;
+            // top: 346px;
+            // left: 1233px;
+            // width: 52px;
+            // height: 13px;
             text-align: center;
-            font: Bold 10px/13px Source Sans Pro;
-            letter-spacing: 0;
-            color: #A3A6B4;
-            opacity: 1;
+            border-left: 1px solid black;
+            // font: Bold 10px/13px Source Sans Pro;
+            // letter-spacing: 0;
+            // color: #A3A6B4;
+            // opacity: 1;
         }
-        // @media (min-width: 768px) {
-        //     .box-date {
-        //       border-top: 1px solid #dfdfdf;
-        //       border-left: 1px solid #dfdfdf;
-        //     }
-        //    }
+        @media screen and (max-width: 1300px) {
+            .day-of-week,
+            .date-grid {
+                grid-template-columns: repeat(7, 100px);
+            }
+           }
         //    @media (min-width: 768px) { 
         //     .box-date { 
         //       border-top: 1px solid #f2f2f2; 

@@ -1,5 +1,5 @@
-import Calendar from "../components/Calendar";
+import {CardCalendar} from "../components/CardCalendar";
 
 export default () => (
-    <Calendar time={new Date()}/>
+    <CardCalendar />
 )
